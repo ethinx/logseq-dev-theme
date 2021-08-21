@@ -864,7 +864,6 @@ progress::-webkit-progress-value {
 
 :root {
   --ct-checkbox-border-radius: 2px;
-  --ct-task-done-text-decoration: none;
 }
 
 /* Markers */
@@ -897,7 +896,6 @@ progress::-webkit-progress-value {
 
 .done {
   color: var(--ct-task-done-text-color);
-  text-decoration: var(--ct-task-done-text-decoration);
 }
 
 .canceled::before {
@@ -1067,7 +1065,7 @@ html[data-theme=light] {
   --ls-link-ref-text-hover-color: var(--ct-secondary-color);
   --ls-active-primary-color: var(--ct-primary-color);
   --ls-active-secondary-color: var(--ct-secondary-color);
-  --ls-external-link-color: var(--ct-secondary-color);
+  --ls-external-link-color: #ec524a;
   --ls-guideline-color: var(--ls-tertiary-background-color);
   --ls-block-bullet-color: var(--ls-tertiary-background-color);
   --ls-bullet-closed-color: var(--ls-secondary-text-color);
@@ -1083,6 +1081,66 @@ html[data-theme=light] {
   --ct-header-bg-color: rgba(255, 255, 255, 0.9);
 }
 
+/* Calendar */
+#contents span.opacity-50 {
+  opacity: 0;
+}
+
+#contents .logseq-tools-calendar:first-child h2 {
+  margin-top: -6px;
+}
+
+.cp__sidebar-main-content .logseq-tools-multiple-calendars {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+
+.cp__sidebar-main-content .logseq-tools-multiple-calendars .logseq-tools-calendar {
+  flex: 0 50%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.logseq-tools-calendar tr {
+  background: none !important;
+}
+
+.logseq-tools-calendar th,
+.logseq-tools-calendar td,
+.logseq-tools-calendar tr {
+  border: none;
+}
+
+.logseq-tools-calendar th,
+.logseq-tools-calendar td {
+  text-align: center;
+}
+
+/* Calendar - pages from other months */
+.logseq-tools-calendar .outofmonth {
+  opacity: 0.3;
+}
+
+.logseq-tools-calendar .today {
+  font-weight: 900;
+  color: #c95f68;
+}
+
+.logseq-tools-calendar .page-exists {
+  border-bottom: 1px solid #c95f68;
+}
+
+.logseq-tools-calendar .today.page-exists {
+  border-bottom-color: #c95f68;
+}
+
+/* Calendar - if you want to add different styling for pages that not exists yet */
+.logseq-tools-calendar .page-ref:not(.page-exists):not(.today) {
+  /* color: violet; */
+}
+
 :root {
   --ls-block-bullet-threading-width: 2px;
+  --ls-main-content-max-width: 1280px;
 }

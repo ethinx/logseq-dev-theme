@@ -12,7 +12,9 @@
 @import "graph.scss";
 @import "theme_dark.scss";
 @import "theme_light.scss";
+@import "logseq_calendar.scss";
 
 :root {
   --ls-block-bullet-threading-width: 2px;
+  --ls-main-content-max-width: 1280px;
 }

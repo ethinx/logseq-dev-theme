@@ -1,6 +1,6 @@
 :root {
   --ct-checkbox-border-radius: 2px;
-  --ct-task-done-text-decoration: none;
+  //--ct-task-done-text-decoration: none;
 }
 
 /* Markers */
@@ -34,7 +34,7 @@
 
 .done {
   color: var(--ct-task-done-text-color);
-  text-decoration: var(--ct-task-done-text-decoration);
+  //text-decoration: var(--ct-task-done-text-decoration);
 }
 
 .canceled::before {
