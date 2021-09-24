@@ -1,3 +1,45 @@
+## [1.21.2](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.1...v1.21.2) (2021-09-24)
+
+
+### Bug Fixes
+
+* fix version ([55f52ac](https://github.com/pengx17/logseq-dev-theme/commit/55f52ac7c213bc5a4f03fc74321c49dfe2c6a8a9))
+
+## [1.21.1](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.0...v1.21.1) (2021-09-24)
+
+
+### Bug Fixes
+
+* update for new custom query block style ([eab936d](https://github.com/pengx17/logseq-dev-theme/commit/eab936ddcc01cb3538f958c659e21e4568c9ccab))
+
+# [1.21.0](https://github.com/pengx17/logseq-dev-theme/compare/v1.20.9...v1.21.0) (2021-09-22)
+
+
+### Features
+
+* adapt youtube video size automatically ([30d2f4d](https://github.com/pengx17/logseq-dev-theme/commit/30d2f4d27bb815b9a266e61509faa109031c1b80))
+
+## [1.20.9](https://github.com/pengx17/logseq-dev-theme/compare/v1.20.8...v1.20.9) (2021-08-30)
+
+
+### Bug Fixes
+
+* revert turning inline into inline-block ([1c5e3ec](https://github.com/pengx17/logseq-dev-theme/commit/1c5e3ec5ea9dfaaf7416614d10a21c1e31b54661))
+
+## [1.20.8](https://github.com/pengx17/logseq-dev-theme/compare/v1.20.7...v1.20.8) (2021-08-26)
+
+
+### Bug Fixes
+
+* hide add button for page preview ([df2bbc5](https://github.com/pengx17/logseq-dev-theme/commit/df2bbc5f0a4c143c4850b0d7feee8c5ec58f8670))
+
+## [1.20.7](https://github.com/pengx17/logseq-dev-theme/compare/v1.20.6...v1.20.7) (2021-08-23)
+
+
+### Bug Fixes
+
+* hovering block indicator position ([3827c95](https://github.com/pengx17/logseq-dev-theme/commit/3827c95cc423fd49726129543d50be75fc92a4aa))
+
 ## [1.20.6](https://github.com/pengx17/logseq-dev-theme/compare/v1.20.5...v1.20.6) (2021-08-18)
 
 
