@@ -759,6 +759,7 @@ progress::-webkit-progress-value {
 }
 
 .tippy-tooltip > .tippy-tooltip-content {
+  padding: 0 1em;
   border: 2px solid #000;
   border-radius: 8px;
   overflow: hidden;
