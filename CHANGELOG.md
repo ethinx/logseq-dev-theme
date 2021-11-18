@@ -1,3 +1,102 @@
+## [1.21.16](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.15...v1.21.16) (2021-11-18)
+
+
+### Bug Fixes
+
+* threading styles regression for 0.4.6 ([a997d7e](https://github.com/pengx17/logseq-dev-theme/commit/a997d7e66069c2f2f710d64990e73928c0bce1af))
+
+## [1.21.15](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.14...v1.21.15) (2021-11-17)
+
+
+### Bug Fixes
+
+* strong elements should inherit their color ([a7a3778](https://github.com/pengx17/logseq-dev-theme/commit/a7a3778f52d5ac6d2428744b858b09fa617621cd))
+
+## [1.21.14](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.13...v1.21.14) (2021-11-17)
+
+
+### Bug Fixes
+
+* scrolling issue in 0.4.6 ([ca0934d](https://github.com/pengx17/logseq-dev-theme/commit/ca0934d455c8673c29fd3652a28615e67b42e432))
+
+## [1.21.13](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.12...v1.21.13) (2021-11-10)
+
+
+### Bug Fixes
+
+* bullet positioning ([fd8ad71](https://github.com/pengx17/logseq-dev-theme/commit/fd8ad718f98c29d42b1097c5ea8624beb792e122))
+
+## [1.21.12](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.11...v1.21.12) (2021-11-10)
+
+
+### Bug Fixes
+
+* adjust priority marker positioning ([1b22af3](https://github.com/pengx17/logseq-dev-theme/commit/1b22af3c659ff2ee4951b4ba522313482cadccc2))
+
+## [1.21.11](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.10...v1.21.11) (2021-11-05)
+
+
+### Bug Fixes
+
+* italic fonts ([67105a3](https://github.com/pengx17/logseq-dev-theme/commit/67105a34855ca36b2ef5089ed26299c7dae3b8a3))
+
+## [1.21.10](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.9...v1.21.10) (2021-10-29)
+
+
+### Bug Fixes
+
+* make block control a little bit nicer ([350885f](https://github.com/pengx17/logseq-dev-theme/commit/350885fb151a0d11c1697c44f790791966e222f1))
+
+## [1.21.9](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.8...v1.21.9) (2021-10-25)
+
+
+### Bug Fixes
+
+* bullets collapse control should not be covered by thread ([d9d6395](https://github.com/pengx17/logseq-dev-theme/commit/d9d63958fca644ab4fd9a28c243537c499e6d046))
+
+## [1.21.8](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.7...v1.21.8) (2021-10-25)
+
+
+### Bug Fixes
+
+* block ref preview header opacity ([e3e6894](https://github.com/pengx17/logseq-dev-theme/commit/e3e6894ff9eb2d73148d5d87f1681c459441c8ac))
+* left sidebar fonts ([ebfbf94](https://github.com/pengx17/logseq-dev-theme/commit/ebfbf94d75f1c27a9645c62375adcb61fdfc8627))
+
+## [1.21.7](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.6...v1.21.7) (2021-10-12)
+
+
+### Bug Fixes
+
+* adapt for Logseq 0.4.3 ([f434c51](https://github.com/pengx17/logseq-dev-theme/commit/f434c51ccb4ad0d3057f231f90096652fb96b26b))
+
+## [1.21.6](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.5...v1.21.6) (2021-10-11)
+
+
+### Bug Fixes
+
+* revert checkbox size ([fef3704](https://github.com/pengx17/logseq-dev-theme/commit/fef370465913becf5e9843930cdcbda281671012))
+
+## [1.21.5](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.4...v1.21.5) (2021-10-11)
+
+
+### Bug Fixes
+
+* marker styles ([48773f5](https://github.com/pengx17/logseq-dev-theme/commit/48773f5bd8286e5fe5de696eed8b13e2bc870d53))
+
+## [1.21.4](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.3...v1.21.4) (2021-10-08)
+
+
+### Bug Fixes
+
+* when left-sidebar is on, the user should still see right side controls ([71fc089](https://github.com/pengx17/logseq-dev-theme/commit/71fc0899d6da3c6301c22410debd5d61966b93ec))
+
+## [1.21.3](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.2...v1.21.3) (2021-09-26)
+
+
+### Bug Fixes
+
+* tooltip padding ([e7efd7f](https://github.com/pengx17/logseq-dev-theme/commit/e7efd7fbea6961c88fe6f262f5765b9d8b161dcd))
+
 ## [1.21.2](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.1...v1.21.2) (2021-09-24)
 
 

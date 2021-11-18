@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code");
 @import url("https://cdn.jsdelivr.net/gh/adobe-fonts/source-sans@3.046R/source-sans-3VF.css");
 @font-face {
@@ -33,6 +32,10 @@ body {
 
 textarea {
   line-height: var(--ct-line-height);
+}
+
+i {
+  font-family: "Only Emoji", "Source Sans 3 VF", sans-serif;
 }
 
 :root {
@@ -92,6 +95,10 @@ textarea {
 }
 :not(.color-level) .color-level {
   box-shadow: 0 0 0 2px var(--color-level-2);
+}
+
+.scrollbar-spacing {
+  height: 100%;
 }
 
 :root {
@@ -201,6 +208,11 @@ textarea {
   margin-top: 0.5em;
 }
 
+.left-sidebar-inner .nav-content-item {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
 :root {
   --ct-page-title-color: var(--ct-bold-color);
   --ct-page-title-font-size: 36px;
@@ -244,7 +256,6 @@ a.title h1.title {
 .cp__header,
 .cp__right-sidebar-topbar {
   height: var(--ct-header-height);
-  width: 100%;
 }
 
 .cp__header::after,
@@ -372,7 +383,7 @@ a.title h1.title {
   height: 14px !important;
   width: 14px !important;
   position: relative;
-  transform: translateX(-1.5px);
+  transform: translate(1px, -1px);
 }
 
 /* Block bullet path should only show in a nested block */
@@ -436,7 +447,7 @@ a.title h1.title {
   content: "";
   top: 12px;
   bottom: 0;
-  left: -17px;
+  left: -15px;
   position: absolute;
   border-left: var(--ls-block-bullet-threading-width) solid transparent;
 }
@@ -491,7 +502,6 @@ a.title h1.title {
 
 .open-block-ref-link {
   opacity: 1;
-  font-family: Asap;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
@@ -504,6 +514,7 @@ a.title h1.title {
 
 .bullet-container.bullet-closed .bullet {
   background-color: var(--ls-primary-background-color);
+  box-shadow: 0 0 1px 2px var(--ls-block-bullet-border-color);
 }
 
 a:hover > .bullet-container .bullet {
@@ -516,6 +527,21 @@ a:hover > .bullet-container .bullet {
 
 .block-control:hover svg {
   filter: drop-shadow(2px 4px 6px black);
+}
+
+.block-control .rotating-arrow {
+  display: block;
+  border-radius: 50%;
+  background-color: var(--ls-primary-background-color);
+  width: 1rem;
+  height: 1rem;
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: 0 0 4px 2px var(--ls-primary-background-color);
+}
+
+.block-control .rotating-arrow > svg {
+  margin-left: 0 !important;
 }
 
 .block-content-wrapper > div > .block-content > span > span > :first-child {
@@ -643,6 +669,10 @@ strong {
   font-weight: 600;
 }
 
+.with-bg-color :is(b, strong) {
+  color: inherit;
+}
+
 /* External links */
 .external-link,
 .external-link:hover {
@@ -711,7 +741,8 @@ a.tag:hover {
 }
 
 /* Page properties */
-.page-properties, .block-properties {
+.page-properties,
+.block-properties {
   margin: 0 0 0.5em -8px;
   font-size: 0.8em;
   background: var(--ls-secondary-background-color);
@@ -720,7 +751,8 @@ a.tag:hover {
   max-width: var(--ct-block-max-width);
 }
 
-.sidebar-item-list .page-properties, .sidebar-item-list .block-properties {
+.sidebar-item-list .page-properties,
+.sidebar-item-list .block-properties {
   background: var(--ls-tertiary-background-color);
 }
 
@@ -779,6 +811,10 @@ progress::-webkit-progress-value {
   background: var(--ls-primary-background-color);
 }
 
+.tippy-tooltip-content > .pr-3 {
+  padding-left: 0.75rem;
+}
+
 .tippy-tooltip-content > .tippy-wrapper.overflow-y-auto {
   overflow: visible;
   display: flex;
@@ -809,6 +845,7 @@ progress::-webkit-progress-value {
   left: -0.5em;
   top: -0.75em;
   z-index: 2;
+  opacity: 1;
   padding: 2px 1em 2px 1em !important;
   background: var(--ct-query-header-background);
   white-space: nowrap;
@@ -880,18 +917,20 @@ progress::-webkit-progress-value {
 
 :root {
   --ct-checkbox-border-radius: 2px;
+  --ct-marker-border-radius: 4px;
+  --ct-task-done-text-decoration: none;
+  --ct-marker-size: 16px;
+  --ct-checkbox-color: var(--ls-active-primary-color);
 }
 
 /* Markers */
 .form-checkbox,
 .form-checkbox:focus {
-  --ct-checkbox-color: var(--ls-active-primary-color);
-  --ct-checkbox-border-radius: 2px;
-  border-radius: var(--ct-checkbox-border-radius);
+  border-radius: var(--ct-marker-border-radius);
   border: 2px solid var(--ct-checkbox-color) !important;
   background-color: transparent !important;
-  margin-top: -3px !important;
-  margin-right: 6px !important;
+  height: var(--ct-marker-size);
+  width: var(--ct-marker-size);
 }
 
 :is(.doing, .now) .form-checkbox,
@@ -914,71 +953,55 @@ progress::-webkit-progress-value {
   color: var(--ct-task-done-text-color);
 }
 
-.canceled::before {
-  --ct-checkbox-color: var(--ls-active-primary-color);
-  --ct-checkbox-border-radius: 2px;
-  content: "";
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border-radius: var(--ct-checkbox-border-radius);
-  border: 2px solid var(--ct-checkbox-color) !important;
-  background-color: var(--ct-warning-color);
-  margin-right: 6px !important;
-  vertical-align: middle;
-}
-
 a[priority],
 a.priority {
   font-size: 0px;
   /* Hide text */
 }
 
-a[priority]::before {
-  font-size: var(--ct-inline-code-font-size);
-}
-
 a[priority=A]::before,
 a.priority[href="#/page/A" i]:before {
-  content: "🔴 A";
-  visibility: visible;
+  content: "A";
+  background: var(--ct-warning-color);
+  color: #000;
 }
 
 a[priority=B]::before,
 a.priority[href="#/page/B" i]:before {
-  content: "🟡 B";
-  visibility: visible;
+  content: "B";
+  background: var(--ct-highlight-color);
+  color: #000;
 }
 
 a[priority=C]::before,
 a.priority[href="#/page/C" i]:before {
-  content: "🟢 C";
-  visibility: visible;
+  content: "C";
+  background: var(--ct-success-color);
+  color: #fff;
 }
 
 a.priority[href="#/page/A" i],
 [href="#/page/B" i],
 [href="#/page/C" i] {
-  visibility: hidden;
-  width: 1.5em;
-  height: 1.5em;
-  white-space: nowrap;
-  text-shadow: var(--ct-tag-shadow);
-  position: relative;
+  display: inline-flex;
+  opacity: 1 !important;
 }
 
 a[priority]::before,
 a.priority::before {
-  border-radius: 50%;
-  color: var(--ls-primary-text-color);
-  display: inline-block;
-  font-size: 16px;
+  transform: translateY(-1px);
+  border: 1px solid #eee;
+  border-radius: var(--ct-marker-border-radius);
+  font-size: 12px;
   font-weight: 600;
-  height: 1rem;
-  line-height: 1rem;
+  height: calc(var(--ct-marker-size) + 4px);
+  width: calc(var(--ct-marker-size) + 4px);
+  line-height: 1.5;
   text-align: center;
-  width: 38px;
-  margin-left: -3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ct-code-font-family);
 }
 
 a.tooltip-priority:first-of-type::before {
@@ -1029,6 +1052,7 @@ html[data-theme=dark] {
   --ls-secondary-background-color: #313942;
   --ls-tertiary-background-color: #38434c;
   --ls-quaternary-background-color: #404b55;
+  --ls-border-color: var(--ls-tertiary-background-color);
   --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
   --ls-primary-text-color: rgb(235, 235, 235);
   --ls-secondary-text-color: rgb(200, 200, 200);
@@ -1070,6 +1094,7 @@ html[data-theme=light] {
   --ls-secondary-background-color: #f8f9fa;
   --ls-tertiary-background-color: #e9ecef;
   --ls-quaternary-background-color: #dee2e6;
+  --ls-border-color: var(--ls-tertiary-background-color);
   --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
   --color-level-4: #ced4da;
   --color-level-5: #adb5bd;
