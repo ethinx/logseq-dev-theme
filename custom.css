@@ -110,7 +110,6 @@ i {
   padding-top: var(--ct-header-height);
   position: absolute;
   width: 100%;
-  overflow-x: hidden;
 }
 
 .theme-inner {
@@ -211,6 +210,16 @@ i {
 .left-sidebar-inner .nav-content-item {
   font-size: 0.875rem;
   font-weight: 500;
+}
+
+#journals > div > div > div > div.flex.flex-col > div.content {
+  position: sticky;
+  top: 50px;
+  z-index: 1;
+}
+#journals > div > div > div > div.flex.flex-col > div.content .journal-title > h1 {
+  backdrop-filter: blur(5px);
+  border-radius: 4px;
 }
 
 :root {
@@ -314,7 +323,26 @@ a.title h1.title {
 
 .ls-block :is(h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5) {
   font-family: var(--ct-page-title-font-family);
+}
+
+.ls-block :is(h1, h2, .h1, .h2) {
   font-weight: var(--ct-page-title-font-weight);
+}
+
+.ls-block :is(h3, h4) {
+  margin: 0.3em 0 0;
+}
+
+.ls-block :is(h3, h4, .h3, .h4) {
+  font-weight: 400;
+}
+
+.ls-block :is(h4, .h4) {
+  opacity: 0.8;
+}
+
+.ls-block :is(h5, .h5):not(textarea) {
+  transform: translateY(-8px);
 }
 
 .ls-block .block-ref :is(h1, h2, h3, h4, h5) {
@@ -356,10 +384,6 @@ a.title h1.title {
 
 .ls-block h5::after {
   content: "h5";
-}
-
-.ls-block :is(h3, h4, h5) {
-  margin: 0.3em 0 0;
 }
 
 :root {
@@ -470,6 +494,7 @@ a.title h1.title {
 
 /* block reference */
 .block-ref {
+  display: inline;
   font-size: inherit;
   padding: 1px 5px 0;
   border-radius: 2px;
@@ -496,7 +521,12 @@ a.title h1.title {
   padding: 0 0.2em;
 }
 
+.block-ref .flex.flex-row.justify-between {
+  display: inline;
+}
+
 .block-ref .block-ref {
+  display: inline;
   padding: 0 0 0 0.2em;
 }
 
@@ -782,6 +812,50 @@ progress::-webkit-progress-value {
   background: var(--ls-tertiary-background-color) !important;
 }
 
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror-gutter,
+.CodeMirror-gutters,
+.CodeMirror-linenumber,
+.CodeMirror-scroll,
+.CodeMirror-sizer,
+.CodeMirror {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.cm-s-solarized div.CodeMirror-selected {
+  background: var(--ct-primary-color);
+  color: var(--ls-selection-color);
+}
+
+.CodeMirror {
+  background-color: var(--color-level-1);
+  box-shadow: 0 0 0 2px var(--color-level-2);
+}
+
+.cm-s-solarized div.CodeMirror-selected {
+  background: var(--color-level-4) !important;
+}
+
+.extensions__code > .CodeMirror {
+  padding-top: 0;
+}
+
+.extensions__code-calc {
+  top: 8px;
+}
+
+.extensions__code-calc-output-line {
+  height: 16px;
+  font-size: 12px;
+}
+
+.extensions__code-lang {
+  margin-left: 4px;
+  height: 28px;
+  border-radius: 4px;
+}
+
 /* Popups */
 .tippy-tooltip {
   padding: 0.5em 0;
@@ -1048,10 +1122,16 @@ html[data-theme=dark] {
   --ct-warning-color: #ff7262;
   --ct-success-color: #0dcf82;
   --ct-highlight-color: #ffc600;
-  --ls-primary-background-color: #272c35;
-  --ls-secondary-background-color: #313942;
-  --ls-tertiary-background-color: #38434c;
-  --ls-quaternary-background-color: #404b55;
+  --color-level-1: #272c35;
+  --color-level-2: #313942;
+  --color-level-3: #38434c;
+  --color-level-4: #404b55;
+  --color-level-5: #525f6b;
+  --color-level-6: #606e7a;
+  --ls-primary-background-color: var(--color-level-1);
+  --ls-secondary-background-color: var(--color-level-2);
+  --ls-tertiary-background-color: var(--color-level-3);
+  --ls-quaternary-background-color: var(--color-level-4);
   --ls-border-color: var(--ls-tertiary-background-color);
   --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
   --ls-primary-text-color: rgb(235, 235, 235);
@@ -1077,6 +1157,7 @@ html[data-theme=dark] {
   /* Will be used if backdrop-filter not supported */
   --ct-header-bg-color: #272c35ee;
   --ls-selection-color: #000;
+  --ls-block-highlight-color: var(--color-level-1);
 }
 
 .dark-theme .image-resize {
@@ -1090,14 +1171,18 @@ html[data-theme=light] {
   --ct-warning-color: #ff7262;
   --ct-success-color: #0dcf82;
   --ct-highlight-color: #ffc600;
+  --color-level-1: #f1f5f9;
+  --color-level-2: #e2e8f0;
+  --color-level-3: #cbd5e1;
+  --color-level-4: #b9c1ca;
+  --color-level-5: #aeb5bd;
+  --color-level-6: #969ca5;
   --ls-primary-background-color: #ffffff;
   --ls-secondary-background-color: #f8f9fa;
   --ls-tertiary-background-color: #e9ecef;
   --ls-quaternary-background-color: #dee2e6;
   --ls-border-color: var(--ls-tertiary-background-color);
   --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
-  --color-level-4: #ced4da;
-  --color-level-5: #adb5bd;
   --ls-primary-text-color: rgb(40, 40, 40);
   --ls-secondary-text-color: #161e2e;
   --ct-bold-color: #000;

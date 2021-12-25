@@ -1,3 +1,59 @@
+## [1.22.6](https://github.com/pengx17/logseq-dev-theme/compare/v1.22.5...v1.22.6) (2021-12-24)
+
+
+### Bug Fixes
+
+* update colors ([291a4ac](https://github.com/pengx17/logseq-dev-theme/commit/291a4ac9904d282c3abc65758e971b150bbd622f))
+
+## [1.22.5](https://github.com/pengx17/logseq-dev-theme/compare/v1.22.4...v1.22.5) (2021-12-22)
+
+
+### Bug Fixes
+
+* [#24](https://github.com/pengx17/logseq-dev-theme/issues/24) not be able to scroll horizontally ([b093433](https://github.com/pengx17/logseq-dev-theme/commit/b0934330168cfc1d7783d6a52b355ec9107c9920))
+
+## [1.22.4](https://github.com/pengx17/logseq-dev-theme/compare/v1.22.3...v1.22.4) (2021-12-20)
+
+
+### Bug Fixes
+
+* calc & lang indicator styles ([6d78f4b](https://github.com/pengx17/logseq-dev-theme/commit/6d78f4b799419c0ff1de6079769e646b170f0085))
+
+## [1.22.3](https://github.com/pengx17/logseq-dev-theme/compare/v1.22.2...v1.22.3) (2021-12-20)
+
+
+### Bug Fixes
+
+* update dark mode selection color ([0d9b59b](https://github.com/pengx17/logseq-dev-theme/commit/0d9b59b866427205f7aa07ece1ff32329ed4e207))
+
+## [1.22.2](https://github.com/pengx17/logseq-dev-theme/compare/v1.22.1...v1.22.2) (2021-12-11)
+
+
+### Bug Fixes
+
+* heading & block ref changes ([abc31e3](https://github.com/pengx17/logseq-dev-theme/commit/abc31e36b21855d74cd7be5721f841d091b817cc))
+
+## [1.22.1](https://github.com/pengx17/logseq-dev-theme/compare/v1.22.0...v1.22.1) (2021-12-09)
+
+
+### Bug Fixes
+
+* block-ref issue in logseq ([6d9b49f](https://github.com/pengx17/logseq-dev-theme/commit/6d9b49fb254501ac320a00316ea685d416d1230e))
+
+# [1.22.0](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.17...v1.22.0) (2021-11-22)
+
+
+### Features
+
+* sticky journal titles ([82a7343](https://github.com/pengx17/logseq-dev-theme/commit/82a73430955e218e4a35e5dc530e9414682bca46))
+
+## [1.21.17](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.16...v1.21.17) (2021-11-22)
+
+
+### Bug Fixes
+
+* smaller code mirror font-size ([ce5925e](https://github.com/pengx17/logseq-dev-theme/commit/ce5925e01314f205acac1e6ba3bf2073cc4526be))
+
 ## [1.21.16](https://github.com/pengx17/logseq-dev-theme/compare/v1.21.15...v1.21.16) (2021-11-18)
 
 

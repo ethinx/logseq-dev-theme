@@ -146,3 +146,47 @@ progress::-webkit-progress-value {
 .cm-s-solarized.cm-s-dark .CodeMirror-gutters {
   background: var(--ls-tertiary-background-color) !important;
 }
+
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror-gutter,
+.CodeMirror-gutters,
+.CodeMirror-linenumber,
+.CodeMirror-scroll,
+.CodeMirror-sizer,
+.CodeMirror {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.cm-s-solarized div.CodeMirror-selected {
+  background: var(--ct-primary-color);
+  color: var(--ls-selection-color);
+}
+
+.CodeMirror {
+  background-color: var(--color-level-1);
+  box-shadow: 0 0 0 2px var(--color-level-2);
+}
+
+.cm-s-solarized div.CodeMirror-selected {
+  background: var(--color-level-4) !important;
+}
+
+.extensions__code > .CodeMirror {
+  padding-top: 0;
+}
+
+.extensions__code-calc {
+  top: 8px;
+}
+
+.extensions__code-calc-output-line {
+  height: 16px;
+  font-size: 12px;
+}
+
+.extensions__code-lang {
+  margin-left: 4px;
+  height: 28px;
+  border-radius: 4px;
+}
