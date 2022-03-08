@@ -1,6 +1,6 @@
 :root {
   --ls-block-bullet-active-color: var(--ls-link-text-color);
-  --ls-block-bullet-threading-width: 1px;
+  --ls-block-bullet-threading-width: var(--ls-block-bullet-threading-width-overwrite, 1px);
 }
 
 .block-control {
@@ -8,7 +8,28 @@
 }
 
 .block-children {
-  border-left-width: var(--ls-block-bullet-threading-width);
+  border-left-color: var(--ls-guideline-color);
+  border-left-width: var(--ls-block-bullet-threading-width) !important;
+}
+
+.block-children-container {
+  position: relative;
+}
+
+.block-children-left-border {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  padding-right: 0px;
+  border-radius: 2px;
+  background-color: transparent;
+  left: -1px;
+  transition: background-color 0.2s;
+}
+
+.block-children-left-border:hover {
+  background-color: var(--ls-block-bullet-active-color);
 }
 
 .block-content-wrapper {
@@ -91,6 +112,11 @@
   border-color: var(--ls-block-bullet-active-color);
 }
 
+@media (max-width: 640px) {
+  .ls-block[haschild=true] > div > .block-content-wrapper::before {
+    left: -11px;
+  }
+}
 /* Disable for doc mode */
 .doc-mode div.items-center::before,
 .doc-mode div.items-center::after,

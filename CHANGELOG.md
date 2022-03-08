@@ -1,3 +1,136 @@
+# [1.24.0](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.16...v1.24.0) (2022-02-23)
+
+
+### Features
+
+* add no bullet threading dev theme ([6b71900](https://github.com/pengx17/logseq-dev-theme/commit/6b7190055cd5983ff0ca441a8ca85df80f9b1d40))
+
+## [1.23.16](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.15...v1.23.16) (2022-02-17)
+
+
+### Bug Fixes
+
+* remove sticky journal title ([48c6727](https://github.com/pengx17/logseq-dev-theme/commit/48c6727d52c099a5c1bdcaa02301d9e12b67097b))
+
+## [1.23.15](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.14...v1.23.15) (2022-02-17)
+
+
+### Bug Fixes
+
+* texts & todo color in highlighted blocks ([df9fc4d](https://github.com/pengx17/logseq-dev-theme/commit/df9fc4d1e16130cf3dbf21c3fc91cb7835242ac6)), closes [#38](https://github.com/pengx17/logseq-dev-theme/issues/38)
+
+## [1.23.14](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.13...v1.23.14) (2022-01-18)
+
+
+### Bug Fixes
+
+* h2 blink issue ([f098307](https://github.com/pengx17/logseq-dev-theme/commit/f09830753ba347953b2a727a2931a435eeefe07f))
+
+## [1.23.13](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.12...v1.23.13) (2022-01-14)
+
+
+### Bug Fixes
+
+* bullet offset ([6c2f83c](https://github.com/pengx17/logseq-dev-theme/commit/6c2f83c112b324748ab7626cf488955ffe3cae7b))
+
+## [1.23.12](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.11...v1.23.12) (2022-01-12)
+
+
+### Bug Fixes
+
+* enlarge page content padding ([936f9b6](https://github.com/pengx17/logseq-dev-theme/commit/936f9b619a3bde4353b443f09a88cf07703905c8))
+
+## [1.23.11](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.10...v1.23.11) (2022-01-11)
+
+
+### Bug Fixes
+
+* left sidebar styles ([bcf387e](https://github.com/pengx17/logseq-dev-theme/commit/bcf387ec62a7bb0491d6d940d03dbf118583b38b))
+
+## [1.23.10](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.9...v1.23.10) (2022-01-11)
+
+
+### Bug Fixes
+
+* padding for page content ([50fc6b9](https://github.com/pengx17/logseq-dev-theme/commit/50fc6b917203c8f06d0dee614473aa5b97d91511))
+
+## [1.23.9](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.8...v1.23.9) (2022-01-11)
+
+
+### Bug Fixes
+
+* for nightly release ([d35209d](https://github.com/pengx17/logseq-dev-theme/commit/d35209d8a7fdfb1d31d66f521d4b2da07e2bbaae))
+
+## [1.23.8](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.7...v1.23.8) (2022-01-11)
+
+
+### Bug Fixes
+
+* adjust for new nightly version ([702afaa](https://github.com/pengx17/logseq-dev-theme/commit/702afaa2367e15eb8862ee81c36c736eea1724a2))
+
+## [1.23.7](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.6...v1.23.7) (2022-01-07)
+
+
+### Bug Fixes
+
+* remove the margin of code ([d388875](https://github.com/pengx17/logseq-dev-theme/commit/d38887510c87834ac77e64ed5ad7b5bed513c8d5))
+
+## [1.23.6](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.5...v1.23.6) (2022-01-04)
+
+
+### Bug Fixes
+
+* lower block toggle bar ([5245dbe](https://github.com/pengx17/logseq-dev-theme/commit/5245dbe431d0f96f536c3730ac04c5bd4bf0ba72))
+
+## [1.23.5](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.4...v1.23.5) (2022-01-04)
+
+
+### Bug Fixes
+
+* compatibility issue with other themes ([978ddf7](https://github.com/pengx17/logseq-dev-theme/commit/978ddf7a9d606169446462eb2780c697abc6fe08))
+
+## [1.23.4](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.3...v1.23.4) (2021-12-31)
+
+
+### Bug Fixes
+
+* some style issues ([0b4d669](https://github.com/pengx17/logseq-dev-theme/commit/0b4d669335354f4cae699acb6343d0840233e89f))
+
+## [1.23.3](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.2...v1.23.3) (2021-12-30)
+
+
+### Bug Fixes
+
+* incorrect color theme ([91f8b37](https://github.com/pengx17/logseq-dev-theme/commit/91f8b37a0ac0be9594627fb0780b2aaf2f99eb88))
+
+## [1.23.2](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.1...v1.23.2) (2021-12-30)
+
+
+### Bug Fixes
+
+* prepare for standalone plugin ([ae0a327](https://github.com/pengx17/logseq-dev-theme/commit/ae0a327584e2470b4aaaae26fb3eda37530cfe65))
+
+## [1.23.1](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.0...v1.23.1) (2021-12-26)
+
+
+### Bug Fixes
+
+* block toggle rounded border ([60b3783](https://github.com/pengx17/logseq-dev-theme/commit/60b3783971d64437fe15baf6e7165e40a337bae4))
+
+# [1.23.0](https://github.com/pengx17/logseq-dev-theme/compare/v1.22.7...v1.23.0) (2021-12-26)
+
+
+### Features
+
+* update block-ref style ([6c177a3](https://github.com/pengx17/logseq-dev-theme/commit/6c177a3c36df5302200b2be8ff7d97aa5cac67d0))
+
+## [1.22.7](https://github.com/pengx17/logseq-dev-theme/compare/v1.22.6...v1.22.7) (2021-12-26)
+
+
+### Bug Fixes
+
+* adapt for new block toggle styles ([1427d05](https://github.com/pengx17/logseq-dev-theme/commit/1427d05ad957b98cdec89325ee125a7d99c6657a))
+
 ## [1.22.6](https://github.com/pengx17/logseq-dev-theme/compare/v1.22.5...v1.22.6) (2021-12-24)
 
 

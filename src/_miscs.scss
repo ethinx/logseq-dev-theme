@@ -81,7 +81,6 @@ pre {
   padding: var(--ct-inline-code-padding) !important;
   background: var(--ls-tertiary-background-color);
   color: var(--ct-inline-code-color);
-  margin-right: 2px;
 }
 
 /* Tags */
@@ -101,6 +100,12 @@ a.tag:hover {
 /* Block with-bg-color */
 .with-bg-color {
   border-radius: 4px;
+}
+
+/* Makes texts in bg always readable */
+.with-bg-color * {
+  color: white !important;
+  border-color: white !important;
 }
 
 /* Page properties */
@@ -187,6 +192,6 @@ progress::-webkit-progress-value {
 
 .extensions__code-lang {
   margin-left: 4px;
-  height: 28px;
+  height: 26px;
   border-radius: 4px;
 }

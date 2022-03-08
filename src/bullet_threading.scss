@@ -1,6 +1,6 @@
 :root {
   --ls-block-bullet-active-color: var(--ls-link-text-color);
-  --ls-block-bullet-threading-width: 1px;
+  --ls-block-bullet-threading-width: var(--ls-block-bullet-threading-width-overwrite, 1px);
 }
 
 .block-control {
@@ -8,7 +8,29 @@
 }
 
 .block-children {
-  border-left-width: var(--ls-block-bullet-threading-width);
+  border-left-color: var(--ls-guideline-color);
+  // Must override this to make it compatible with other themes
+  border-left-width: var(--ls-block-bullet-threading-width) !important;
+}
+
+.block-children-container {
+  position: relative;
+}
+
+.block-children-left-border {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  padding-right: 0px;
+  border-radius: 2px;
+  background-color: transparent;
+  left: -1px;
+  transition: background-color 0.2s;
+}
+
+.block-children-left-border:hover {
+  background-color: var(--ls-block-bullet-active-color);
 }
 
 .block-content-wrapper {
@@ -102,6 +124,13 @@
     &:focus-within > div > .block-content-wrapper::before {
       border-color: var(--ls-block-bullet-active-color);
     }
+  }
+}
+
+// Fix https://github.com/pengx17/logseq-plugin-bullet-threading/issues/1
+@media (max-width: 640px) {
+  .ls-block[haschild=true] > div > .block-content-wrapper::before {
+    left: -11px;
   }
 }
 
