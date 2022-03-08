@@ -177,6 +177,10 @@ progress::-webkit-progress-value {
   background: var(--color-level-4) !important;
 }
 
+.extensions__code > div.flex {
+  margin-top: 0px !important;
+}
+
 .extensions__code > .CodeMirror {
   padding-top: 0;
 }
