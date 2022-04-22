@@ -1,3 +1,109 @@
+## [1.25.11](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.10...v1.25.11) (2022-04-21)
+
+
+### Bug Fixes
+
+* remove large padding ([326d306](https://github.com/pengx17/logseq-dev-theme/commit/326d306ed1361b306895a2b44803893ce88b0931))
+
+## [1.25.10](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.9...v1.25.10) (2022-04-21)
+
+
+### Bug Fixes
+
+* remove backdrop-filter for headers ([45788a6](https://github.com/pengx17/logseq-dev-theme/commit/45788a6f9b87655eefba60f7635d115f84c4ce3c))
+
+## [1.25.9](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.8...v1.25.9) (2022-04-21)
+
+
+### Bug Fixes
+
+* journal load issue ([20498fd](https://github.com/pengx17/logseq-dev-theme/commit/20498fdda9a651dfca535ac172f1fd2b3d864f78))
+
+## [1.25.8](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.7...v1.25.8) (2022-04-21)
+
+
+### Reverts
+
+* Revert "fix: journal page load issue" ([0b341ea](https://github.com/pengx17/logseq-dev-theme/commit/0b341ead0f8f9e4d4c7e7873066e9c159246df45))
+
+## [1.25.7](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.6...v1.25.7) (2022-04-21)
+
+
+### Bug Fixes
+
+* journal page load issue ([071c295](https://github.com/pengx17/logseq-dev-theme/commit/071c29507959d4a3c7601b9a845abf58078c43fb))
+
+## [1.25.6](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.5...v1.25.6) (2022-04-20)
+
+
+### Bug Fixes
+
+* solid left border in doc mod ([c94113b](https://github.com/pengx17/logseq-dev-theme/commit/c94113bd8acb6ff9443e53a6cbdf301bba036722))
+
+## [1.25.5](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.4...v1.25.5) (2022-04-20)
+
+
+### Bug Fixes
+
+* #main-container min height ([4623f47](https://github.com/pengx17/logseq-dev-theme/commit/4623f4781778de591154e7c1028188baa1d86814))
+
+## [1.25.4](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.3...v1.25.4) (2022-04-20)
+
+
+### Bug Fixes
+
+* build is missing no_bullet_threading.css ([5b4a2b1](https://github.com/pengx17/logseq-dev-theme/commit/5b4a2b15db66edee5d9816a190d68d444f0978b9))
+* dates in date picker is not visible ([6cede63](https://github.com/pengx17/logseq-dev-theme/commit/6cede636f8b3ee42e649b4439a95dc456af75c94)), closes [#50](https://github.com/pengx17/logseq-dev-theme/issues/50)
+
+## [1.25.3](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.2...v1.25.3) (2022-04-18)
+
+
+### Bug Fixes
+
+* fix scrollbar issue ([2d48f01](https://github.com/pengx17/logseq-dev-theme/commit/2d48f0151a097242f0199a37fd9b5aaa13b9ca76))
+
+## [1.25.2](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.1...v1.25.2) (2022-04-15)
+
+
+### Bug Fixes
+
+* first journal item height ([7d40029](https://github.com/pengx17/logseq-dev-theme/commit/7d40029380ac9c7292570ab31ebe1dd234efd7c7))
+
+## [1.25.1](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.0...v1.25.1) (2022-04-15)
+
+
+### Bug Fixes
+
+* header paddings ([c61d414](https://github.com/pengx17/logseq-dev-theme/commit/c61d414c707b32f25ce69b8280d4b58f8f23a039))
+
+# [1.25.0](https://github.com/pengx17/logseq-dev-theme/compare/v1.24.3...v1.25.0) (2022-04-15)
+
+
+### Features
+
+* adapt mobile styles ([440961c](https://github.com/pengx17/logseq-dev-theme/commit/440961cc568dc06513d383515784f58cf4216498))
+
+## [1.24.3](https://github.com/pengx17/logseq-dev-theme/compare/v1.24.2...v1.24.3) (2022-04-01)
+
+
+### Bug Fixes
+
+* threading in the first block of the embedded ([986e791](https://github.com/pengx17/logseq-dev-theme/commit/986e7913b1822aaaf9f3f44c7389758fd6963ee3))
+
+## [1.24.2](https://github.com/pengx17/logseq-dev-theme/compare/v1.24.1...v1.24.2) (2022-03-28)
+
+
+### Bug Fixes
+
+* compatibility fix for light/white theme refactor upstream ([14d3194](https://github.com/pengx17/logseq-dev-theme/commit/14d3194b10a89fdfc10c6e5506ccebe1d713d012))
+
+## [1.24.1](https://github.com/pengx17/logseq-dev-theme/compare/v1.24.0...v1.24.1) (2022-03-17)
+
+
+### Bug Fixes
+
+* adjust code block margin ([bce6ea1](https://github.com/pengx17/logseq-dev-theme/commit/bce6ea147324a244742cf97b5f06c3766e42a8cd))
+
 # [1.24.0](https://github.com/pengx17/logseq-dev-theme/compare/v1.23.16...v1.24.0) (2022-02-23)
 
 

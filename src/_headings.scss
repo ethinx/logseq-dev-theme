@@ -10,7 +10,7 @@
   --ct-heading-font-weight: 700;
   --ct-heading-font-style: normal;
 
-  --ct-header-height: 42px;
+  --ct-header-height: calc(var(--ls-headbar-height) + var(--ls-headbar-inner-top-padding));
   --ct-topbar-backdrop: blur(20px);
 }
 
@@ -39,11 +39,6 @@ a.title h1.title {
   text-shadow: var(--ct-heading-text-shadow, none);
 }
 
-.cp__header,
-.cp__right-sidebar-topbar {
-  height: var(--ct-header-height);
-}
-
 .cp__header::after,
 .cp__right-sidebar-topbar::after {
   left: 0;
@@ -55,14 +50,6 @@ a.title h1.title {
   background-color: rgba(0, 0, 0, 0.16);
   display: block;
   content: "";
-}
-
-.cp__header #search-field {
-  height: 28px;
-  padding: 0;
-  font-size: 12px;
-  background: transparent;
-  color: var(--ls-search-icon-color, #9fa6b2);
 }
 
 .cp__header.electron-mac {

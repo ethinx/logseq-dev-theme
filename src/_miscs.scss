@@ -199,3 +199,15 @@ progress::-webkit-progress-value {
   height: 26px;
   border-radius: 4px;
 }
+
+.extensions__code-lang + div {
+  margin-top: 0 !important;
+}
+
+.link_preview__root {
+  max-width: 100%;
+}
+
+.rc-datepicker {
+  color: #333;
+}
